@@ -1,0 +1,34 @@
+:root {
+  font-family: var(--font-family-sans-serif);
+}
+
+
+code,
+var,
+samp,
+i,
+ruby,
+kbd,
+rt {
+  font-family: var(--font-family-monospace);
+}
+
+
+.fl-text-left {
+  text-align: left !important;
+}
+
+
+.fl-text-right {
+  text-align: right !important;
+}
+
+
+.fl-text-center {
+  text-align: center !important;
+}
+
+
+.fl-text-justify {
+  text-align: justify !important;
+}

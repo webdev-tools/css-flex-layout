@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "prebuild": "stylelint \"src/*.css\" && rimraf dist && mkdirp dist",
+    "prebuild": "npm run stylelint && rimraf dist && mkdirp dist",
     "build": "cleancss --level 2 --source-map --format beautify -o dist/main.css src/main.css",
-    "postbuild": "cleancss --level 2 --source-map --debug -o dist/main.min.css src/main.css"
+    "postbuild": "cleancss --level 2 --source-map --debug -o dist/main.min.css src/main.css",
+    "stylelint": "stylelint --fix \"src/*.css\""
   },
   "private": false,
   "dependencies": {},
@@ -19,6 +20,9 @@
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
-    "rules": {}
+    "rules": {
+      "color-hex-case": "upper",
+      "max-empty-lines": 2
+    }
   }
 }

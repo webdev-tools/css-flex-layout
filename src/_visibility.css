@@ -1,0 +1,11 @@
+.fl-hide {
+  display: none !important;
+}
+
+
+.fl-truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

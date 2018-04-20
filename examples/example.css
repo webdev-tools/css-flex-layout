@@ -1,0 +1,17 @@
+main div {
+  background-color: #EFEFEF;
+}
+
+main aside {
+  outline: 1px solid #CCC;
+}
+
+main aside:nth-child(even) {
+  outline-color: rosybrown;
+}
+
+footer {
+  background: #343A40;
+  color: #FFF;
+  min-height: 1.5rem;
+}

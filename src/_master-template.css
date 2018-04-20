@@ -1,0 +1,24 @@
+.fl-master-template {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+.fl-master-template > * {
+  flex: 0 1 auto;
+  min-height: 1.5rem;
+}
+
+
+.fl-master-template__header,
+.fl-master-template > header {
+  min-height: 40px;
+}
+
+
+.fl-master-template__main,
+.fl-master-template > main {
+  flex: 1 0 auto;
+  display: block;
+}

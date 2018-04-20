@@ -1,0 +1,121 @@
+.fl-valign {
+  display: flex;
+  align-items: center;
+}
+
+
+html,
+body,
+.fl-rows-container,
+[class*="-cols-container"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+html > *,
+body > *,
+.fl-rows-container > *,
+[class*="-cols-container"] > *,
+.fl-valign > * {
+  flex: 1 0 auto;
+  position: relative;
+}
+
+
+.fl-rows-container {
+  justify-content: flex-start;
+}
+
+
+[class*="-cols-container"] > * {
+  flex: 1 1 auto;
+}
+
+
+html,
+body,
+.fl-rows-container {
+  flex-direction: column;
+}
+
+
+[class*="-cols-container"] {
+  flex-direction: row;
+}
+
+
+.fl-col-1 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+
+
+.fl-col-2,
+.fl-6-cols-container > * {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+
+
+.fl-col-3,
+.fl-4-cols-container > * {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+
+.fl-col-4,
+.fl-3-cols-container > * {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+
+
+.fl-col-5 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+
+
+.fl-col-6,
+.fl-2-cols-container > * {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+
+.fl-col-7 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+
+
+.fl-col-8 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+
+
+.fl-col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+
+.fl-col-10 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+
+
+.fl-col-11 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+
+
+.fl-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
