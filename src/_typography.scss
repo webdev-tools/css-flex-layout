@@ -1,5 +1,7 @@
+@import "./_variables";
+
 :root {
-  font-family: var(--font-family-sans-serif);
+  font-family: $font-family-sans-serif;
 }
 
 
@@ -10,7 +12,7 @@ i,
 ruby,
 kbd,
 rt {
-  font-family: var(--font-family-monospace);
+  font-family: $font-family-monospace;
 }
 
 

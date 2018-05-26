@@ -11,5 +11,7 @@
   ],
   "files.associations": {
     "*.stylelintrc": "json"
-  }
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true
 }
