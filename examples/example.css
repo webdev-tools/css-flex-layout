@@ -10,7 +10,8 @@ main aside:nth-child(even) {
   outline-color: rosybrown;
 }
 
-footer {
+footer,
+header {
   background: #343A40;
   color: #FFF;
   min-height: 1.5rem;

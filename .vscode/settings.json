@@ -6,7 +6,8 @@
     "cleancss",
     "postbuild",
     "prebuild",
-    "stylelint"
+    "stylelint",
+    "valign"
   ],
   "files.associations": {
     "*.stylelintrc": "json"
