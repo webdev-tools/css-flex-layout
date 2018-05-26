@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "streetsidesoftware.code-spell-checker",
+    "shinnn.stylelint",
+    "mrmlnc.vscode-scss"
+  ]
+}

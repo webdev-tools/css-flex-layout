@@ -1,0 +1,14 @@
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "cSpell.words": [
+    "cleancss",
+    "postbuild",
+    "prebuild",
+    "stylelint"
+  ],
+  "files.associations": {
+    "*.stylelintrc": "json"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "color-hex-case": "upper",
+    "max-empty-lines": 2
+  },
+  "ignoreFiles": [
+    "dist/**",
+    "node_modules/**"
+  ]
+}

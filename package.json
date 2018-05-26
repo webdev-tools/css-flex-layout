@@ -3,26 +3,25 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "stylelint": "stylelint --fix \"src/*.scss\"",
+
     "prebuild": "npm run stylelint && rimraf dist && mkdirp dist",
-    "build": "cleancss --level 2 --source-map --format beautify -o dist/main.css src/main.css",
-    "postbuild": "cleancss --level 2 --source-map --debug -o dist/main.min.css src/main.css",
-    "stylelint": "stylelint --fix \"src/*.css\""
+    "build": "npm run sass-to-css && npm run clean-css",
+    "postbuild": "npm run clean-css-min",
+
+    "sass-to-css": "node-sass --linefeed lf --source-map true src/main.scss -o dist/",
+    "clean-css": "cleancss --level 2 --source-map --format beautify -o dist/main.css dist/main.css",
+    "clean-css-min": "cleancss --source-map -o dist/main.min.css dist/main.css"
   },
   "private": false,
   "dependencies": {},
   "devDependencies": {
     "clean-css-cli": "^4.1.11",
     "mkdirp": "^0.5.1",
+    "node-sass": "^4.9.0",
     "normalize.css": "^8.0.0",
     "rimraf": "^2.6.2",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0"
-  },
-  "stylelint": {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "color-hex-case": "upper",
-      "max-empty-lines": 2
-    }
   }
 }
