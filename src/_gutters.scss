@@ -1,0 +1,19 @@
+
+@for $i from 1 through 4 {
+  $multiply: 5 * $i;
+  $pad: 5px * $i;
+
+  .fl-gutter-#{$multiply} > * {
+    padding: $pad;
+  }
+
+  .fl-gutter-tb-#{$multiply} > * {
+    padding-top: $pad;
+    padding-bottom: $pad;
+  }
+
+  .fl-gutter-rl-#{$multiply} > * {
+    padding-left: $pad;
+    padding-right: $pad;
+  }
+}
