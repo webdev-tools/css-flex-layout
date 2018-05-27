@@ -15,6 +15,7 @@
     "preversion": "npm run build",
     "version": "npm run changelog && git add .",
     "postversion": "node tools/remove-scripts-to-publish.js && npm publish --access public && git push --follow-tags",
+    "postpublish": "git checkout -- package.json",
     "commit": "git-cz",
     "changelog": "conventional-changelog -i CHANGELOG.md -s"
   },
