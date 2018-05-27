@@ -12,7 +12,7 @@
     "watch-sass": "npm run sass-to-css -- -wr",
     "clean-css": "cleancss --level 2 --source-map --format beautify -o dist/main.css dist/main.css",
     "clean-css-min": "cleancss --debug --source-map -o dist/main.min.css dist/main.css",
-    "preversion": "npm run stylelint && npm run build",
+    "preversion": "npm run build",
     "version": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "npm publish --access public",
     "postpublish": "git push && git push --tags",
