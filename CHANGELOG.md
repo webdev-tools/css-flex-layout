@@ -1,3 +1,12 @@
+<a name="0.1.4"></a>
+## <small>0.1.4 (2018-05-27)</small>
+
+* 0.1.2 ([28a88e3](https://github.com/webdev-tools/css-flex-layout/commit/28a88e3))
+* build: Removed semantic-version to user npm version instead ([bb4382e](https://github.com/webdev-tools/css-flex-layout/commit/bb4382e))
+* build: Updated Husky git-hooks ([cfca158](https://github.com/webdev-tools/css-flex-layout/commit/cfca158))
+
+
+
 <a name="0.1.2"></a>
 ## <small>0.1.2 (2018-05-27)</small>
 
