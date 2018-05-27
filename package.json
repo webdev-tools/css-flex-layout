@@ -1,5 +1,6 @@
 {
   "name": "@webdev-tools/css-flex-layout",
+  "description": "A tiny framework based on css flex box to manage grids without flood your html",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -13,17 +14,69 @@
     "clean-css-min": "cleancss --debug --source-map -o dist/main.min.css dist/main.css",
     "preversion": "npm run stylelint && npm run build",
     "postversion": "npm publish --access public",
-    "postpublish": "git push && git push --tags"
+    "postpublish": "git push && git push --tags",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release",
+    "precommit": "lint-staged",
+    "commitmsg": "validate-commit-msg",
+    "prepush": "npm run build",
+    "postinstall": "node node_modules/husky/bin/install.js"
+  },
+  "lint-staged": {
+    "src/**/*.scss": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": "conventional-commit-types",
+      "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
+    }
   },
   "private": false,
   "dependencies": {},
   "devDependencies": {
     "clean-css-cli": "^4.1.11",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.0",
+    "prompt": "^1.0.0",
     "rimraf": "^2.6.2",
+    "semantic-release": "^15.5.0",
+    "semantic-release-cli": "^4.0.1",
     "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.1.0"
+    "stylelint-scss": "^3.1.0",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdev-tools/css-flex-layout.git"
+  },
+  "keywords": [
+    "css",
+    "flexgrid",
+    "flex-grid",
+    "flex-layout",
+    "grid"
+  ],
+  "author": "@webdev-tools",
+  "bugs": {
+    "url": "https://github.com/webdev-tools/css-flex-layout/issues"
+  },
+  "homepage": "https://github.com/webdev-tools/css-flex-layout#readme",
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
