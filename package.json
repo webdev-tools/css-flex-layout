@@ -10,7 +10,7 @@
     "sass-to-css": "node-sass --linefeed lf --source-map true src/main.scss -o dist/",
     "watch-sass": "npm run sass-to-css -- -wr",
     "clean-css": "cleancss --level 2 --source-map --format beautify -o dist/main.css dist/main.css",
-    "clean-css-min": "cleancss --source-map -o dist/main.min.css dist/main.css"
+    "clean-css-min": "cleancss --debug --source-map -o dist/main.min.css dist/main.css"
   },
   "private": false,
   "dependencies": {},
