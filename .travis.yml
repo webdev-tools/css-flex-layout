@@ -17,6 +17,7 @@ script:
   - npm run build
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: npm run semantic-release
   on:
