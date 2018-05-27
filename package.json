@@ -13,6 +13,7 @@
     "clean-css": "cleancss --level 2 --source-map --format beautify -o dist/main.css dist/main.css",
     "clean-css-min": "cleancss --debug --source-map -o dist/main.min.css dist/main.css",
     "preversion": "npm run stylelint && npm run build",
+    "version": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "npm publish --access public",
     "postpublish": "git push && git push --tags",
     "commit": "git-cz",
@@ -42,6 +43,7 @@
   "devDependencies": {
     "clean-css-cli": "^4.1.11",
     "commitizen": "^2.10.1",
+    "conventional-changelog-cli": "^1.3.22",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.2",
