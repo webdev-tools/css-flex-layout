@@ -1,3 +1,14 @@
+<a name="0.1.1"></a>
+## <small>0.1.1 (2018-05-27)</small>
+
+* docs(docs): Added classes documentation and usage to README ([74e664d](https://github.com/webdev-tools/css-flex-layout/commit/74e664d))
+* ci: Added deploy script to travis-ci ([6fae64e](https://github.com/webdev-tools/css-flex-layout/commit/6fae64e))
+* ci: Added skip_cleanup: true to avoid remove node_modules folder ([b48f799](https://github.com/webdev-tools/css-flex-layout/commit/b48f799))
+* ci: Initiated semantic release and conventional-commit ([02f682e](https://github.com/webdev-tools/css-flex-layout/commit/02f682e))
+* build: Enabled change-log generation when running npm version ([b72e569](https://github.com/webdev-tools/css-flex-layout/commit/b72e569))
+
+
+
 <a name="0.1.0"></a>
 ## 0.1.0 (2018-05-27)
 

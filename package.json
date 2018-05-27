@@ -1,7 +1,7 @@
 {
   "name": "@webdev-tools/css-flex-layout",
   "description": "A tiny framework based on css flex box to manage grids without flood your html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "scripts": {
     "stylelint": "stylelint --fix \"src/*.scss\"",
