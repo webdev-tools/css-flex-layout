@@ -14,5 +14,8 @@
     "*.stylelintrc": "json"
   },
   "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#ce1ec5bd"
+  }
 }
